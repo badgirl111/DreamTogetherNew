@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.huangyiting.dreamtogether.ui.MainActivity">
+    <!--生之时fragment布局-->
+    <!--设置返回键-->
+    <ImageView
+        android:id="@+id/back_to_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back_24"
+        android:padding="20dp"
+     />
+
+    <!--时钟-->
+    <AnalogClock
+        android:id="@+id/analogClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <!--“您出生于XXX提示-->
+    <TextView
+        android:id="@+id/born_time_set_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/analogClock"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/born_time_set_hint"
+        android:textSize="18sp"/>
+
+    <!--选择出生日期的button-->
+    <Button
+        android:id="@+id/check_born_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/born_time_set_hint"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/check_born_time"
+      />
+
+    <RelativeLayout
+        android:id="@+id/time_set_over"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/born_time_set_hint"
+        android:layout_centerHorizontal="true"
+        android:alpha = "0">
+
+        <!--时间表格-->
+        <ImageView
+            android:id="@+id/six_data_form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/six_form"
+            android:layout_marginBottom="5dp"
+            />
+
+
+        <!--时间数据-->
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/six_data_form"
+            android:layout_alignRight="@id/six_data_form"
+            android:layout_alignTop="@id/six_data_form"
+            android:layout_alignBottom="@id/six_data_form"
+            >
+            <TableRow
+                android:layout_marginTop="10dp">
+                <TextView android:id="@+id/year"  android:layout_weight="1" android:gravity="center"/>
+                <TextView android:id="@+id/month" android:layout_weight="1" android:gravity="center"/>
+                <TextView android:id="@+id/week" android:layout_weight="1" android:gravity="center"/>
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="1dp">
+                <TextView android:layout_width="0dp" android:text="年" android:layout_weight="1" android:gravity="center"/>
+                <TextView android:layout_width="0dp" android:text="月" android:layout_weight="1" android:gravity="center"/>
+                <TextView android:layout_width="0dp" android:text="周" android:layout_weight="1" android:gravity="center"/>
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="10dp">
+                <TextView android:layout_width="0dp" android:id="@+id/day" android:layout_weight="1" android:gravity="center"/>
+                <TextView android:layout_width="0dp" android:id="@+id/hour" android:layout_weight="1" android:gravity="center"/>
+                <TextView android:layout_width="0dp" android:id="@+id/min" android:layout_weight="1" android:gravity="center"/>
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="1dp">
+                <TextView android:layout_width="0dp" android:text="天" android:layout_weight="1" android:gravity="center"/>
+                <TextView android:layout_width="0dp" android:text="小时" android:layout_weight="1" android:gravity="center"/>
+                <TextView android:layout_width="0dp" android:text="分钟" android:layout_weight="1" android:gravity="center"/>
+            </TableRow>
+        </TableLayout>
+
+
+    </RelativeLayout>
+
+    <!--年龄-->
+    <TextView
+        android:id="@+id/dif_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/time_set_over"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:alpha="0"
+        />
+</RelativeLayout>

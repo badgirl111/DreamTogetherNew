@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DreamTogether</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_set_born_time">SetBornTimeActivity</string>
+    <string name="born_time_set_hint">您出生于</string>
+    <string name="check_born_time">选择日期</string>
+    <string name="title_activity_born_time_set">BornTimeSetActivity</string>
+    <string name="ok">确认</string>
+    <string name="cancel">取消</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="at_the_time_of_live">生之时</string>
+    <string name="river_of_wish">心愿之河</string>
+    <string name="backgroud_set">背景设置</string>
+    <string name="feedback">意见反馈</string>
+    <string name="version_update">版本更新</string>
+    <string name="all_wishes">全部心愿</string>
+    <string name="my_wishes">我的心愿</string>
+
+</resources>

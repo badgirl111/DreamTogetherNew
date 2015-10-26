@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.huangyiting.dreamtogether.ui.BornTimeSetActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        >
+    <DatePicker
+        android:id="@+id/data_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        >
+        </DatePicker>
+
+    <Button
+        android:id="@+id/time_set_ok"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@id/data_picker"
+        android:layout_alignLeft="@id/data_picker"
+        android:text="@string/ok"/>
+
+    <Button
+        android:id="@+id/time_set_cancel"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/data_picker"
+        android:layout_alignRight="@id/data_picker"
+        android:text="@string/cancel"/>
+    </RelativeLayout>
+
+</RelativeLayout>

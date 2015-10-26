@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:paddingLeft="30dp"
+    >
+<!--slidingmenu布局-->
+    <TextView
+        android:id="@+id/at_the_time_of_life"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/at_the_time_of_live"
+        android:textColor="@drawable/white"
+        android:textSize="18sp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#ffffff"
+        />
+
+    <TextView
+        android:id="@+id/river_of_wish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/river_of_wish"
+        android:textColor="@drawable/white"
+        android:textSize="18sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#ffffff"
+        />
+
+    <TextView
+        android:id="@+id/backgroud_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@drawable/white"
+        android:text="@string/backgroud_set"
+        android:textSize="18sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#ffffff"
+        />
+
+    <TextView
+        android:id="@+id/feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/feedback"
+        android:textColor="@drawable/white"
+        android:textSize="18sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#ffffff"
+        />
+
+    <TextView
+        android:id="@+id/version_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/version_update"
+        android:textColor="@drawable/white"
+        android:textSize="18sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#ffffff"
+        />
+
+</LinearLayout>

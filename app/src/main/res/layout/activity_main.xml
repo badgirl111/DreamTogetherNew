@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.huangyiting.dreamtogether.ui.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment
+            android:id="@+id/at_the_time_of_life"
+            android:name="com.example.huangyiting.dreamtogether.ui.fragment.AtTimeOfLiveFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></fragment>
+     </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment
+            android:id="@+id/river_of_wish"
+            android:name="com.example.huangyiting.dreamtogether.ui.fragment.RiverOfWishFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></fragment>
+    </FrameLayout>
+
+    <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <fragment
+        android:id="@+id/backgroud_set"
+        android:name="com.example.huangyiting.dreamtogether.ui.fragment.BackGroudSetFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></fragment>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment
+            android:id="@+id/feedback"
+            android:name="com.example.huangyiting.dreamtogether.ui.fragment.FeedBackFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></fragment>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment
+            android:id="@+id/version_update"
+            android:name="com.example.huangyiting.dreamtogether.ui.fragment.VersionUpdateFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></fragment>
+    </FrameLayout>
+</RelativeLayout>
